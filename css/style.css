@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  margin: 0 auto;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.card__svg {
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__bottom {
+  padding: 4rem;
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
+}
+
+.card__heading {
+  color: hsl(223, 47%, 23%);
+  font-size: 2.7rem;
+  font-weight: 900;
+  margin-bottom: 1.7rem;
+}
+
+.card__body {
+  width: 90%;
+  margin: 0 auto;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 1.7rem;
+}
+
+.card__pricing-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 2.5rem;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.card__music-icon {
+  margin-right: 2rem;
+}
+
+.card__pricing {
+  text-align: left;
+}
+
+.card__pricing-title {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.6rem;
+}
+
+.card__pricing-price {
+  font-size: 1.3rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.card__pricing-change,
+.card__pricing-change:link,
+.card__pricing-change:visited {
+  margin-right: 1rem;
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 1rem;
+  color: hsl(245, 75%, 52%);
+}
+
+.card__pricing-change:active,
+.card__pricing-change:focus {
+  outline: none;
+}
+
+.card__payment-btn {
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 7px 10px rgb(0, 0, 0, 0.2);
+  background-color: hsl(245, 75%, 52%);
+}
+
+.card__cancel-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
